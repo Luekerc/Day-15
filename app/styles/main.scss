@@ -1,0 +1,81 @@
+body {
+	background-color: silver;
+	font-family: sans-serif;
+}
+
+.search-title {
+	text-align: center;
+	padding: 5px 0 0 0;
+	background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Night-sky-milky-way-galaxy-astrophotography_-_West_Virginia_-_ForestWander.jpg/1599px-Night-sky-milky-way-galaxy-astrophotography_-_West_Virginia_-_ForestWander.jpg)no-repeat center center fixed;
+	margin: 0 0 1.5em 0;
+	font-size: 1.75em;
+	color: gold;
+	border-radius: 10px 10px 10px 10px;
+	// url(images/bg.jpg) no-repeat center center fixed; 
+}
+
+#buttonandresults {
+	text-align:center;
+}
+
+.search-box{
+
+}
+
+.searchbutton{
+	padding: 1px 2px 5px 0;
+}
+
+.intro{
+	background-color: RGB(50,100,75);
+	padding: 5px 0 0 10px;
+	margin: 0 0 1em 0;
+	font-size: 1.5em;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#results {
+	border: 1px solid black;
+	width: 100%;
+	min-height: 2em;
+	background-color: rgb(255,255,255);
+	text-align: left;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+}
+
+.watchlist{
+	text-align: left;
+	padding: 5px 0 0 10px;
+	background-color: RGB(50,100,75);
+	margin: 0 0 1em 0;
+	font-size: 1.5em;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.towatch{
+	border: 1px solid black;
+	width: 100%;
+	min-height: 2em;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+}
+
+#watched{
+	text-align: left;
+	padding: 5px 0 0 10px;
+	background-color: RGB(50,100,75);
+	margin: 0 0 1em 0;
+	font-size: 1.5em;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.watched{
+	border: 1px solid black;
+	width: 100%;
+	min-height: 2em;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 5px;
+}
