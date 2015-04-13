@@ -1,6 +1,8 @@
 body {
 	background-color: silver;
 	font-family: sans-serif;
+	width: 90%;
+	margin: 1em 0 0 1.5em;
 }
 
 .search-title {
@@ -10,7 +12,7 @@ body {
 	margin: 0 0 1.5em 0;
 	font-size: 1.75em;
 	color: gold;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 	// url(images/bg.jpg) no-repeat center center fixed; 
 }
 
@@ -29,9 +31,9 @@ body {
 .intro{
 	background-color: RGB(50,100,75);
 	padding: 5px 0 0 10px;
-	margin: 0 0 1em 0;
+	margin: 0 0 0 0;
 	font-size: 1.5em;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 #results {
@@ -40,7 +42,7 @@ body {
 	min-height: 2em;
 	background-color: rgb(255,255,255);
 	text-align: left;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -50,7 +52,7 @@ body {
 	background-color: RGB(50,100,75);
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .towatch{
@@ -58,7 +60,7 @@ body {
 	width: 100%;
 	min-height: 2em;
 	background-color: white;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 	padding: 5px 5px 5px 5px;
 }
 
@@ -68,7 +70,7 @@ body {
 	background-color: RGB(50,100,75);
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 .watched{
@@ -76,6 +78,6 @@ body {
 	width: 100%;
 	min-height: 2em;
 	background-color: white;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 5px 5px 5px 5px;
 	padding: 5px 5px 5px 5px;
 }
