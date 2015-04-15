@@ -13,12 +13,12 @@
 
   <body>
       <div>
-          <div class="search-title">Put your movie title in <strong>this</strong> box and press"Search"!!!
+          <div class="search-title">Put your movie title into the text box and press "Search"!!!
           </div>
       
           <div id="buttonandresults">
-            <input type="text" class="search-box">
-            <button type="button" class="searchbutton">Search</button>
+            <input type="text" class="search-box" placeholder="Type movie name here">
+            <button type="button" id="searchbutton" class="btn btn-default">Search</button>
            
           </div>
 
@@ -36,7 +36,9 @@
                 <li id="Series" role="presentation"><a role="menuitem" tabindex="-1" href="#">Series</a></li>
                 <li id="All" role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
               </ul>
-          </div>
+          <button id="clearresults" class="btn btn-default">Clear Results
+          </button>
+           </div>
           <div id="results">
             <table id="table">
             </table>

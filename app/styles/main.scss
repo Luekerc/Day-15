@@ -8,10 +8,10 @@ body {
 .search-title {
 	text-align: center;
 	padding: 5px 0 0 0;
-	background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Night-sky-milky-way-galaxy-astrophotography_-_West_Virginia_-_ForestWander.jpg/1599px-Night-sky-milky-way-galaxy-astrophotography_-_West_Virginia_-_ForestWander.jpg)no-repeat center center fixed;
+	background-color: rgb(100, 150, 200);
 	margin: 0 0 1.5em 0;
 	font-size: 1.75em;
-	color: gold;
+	color: white;
 	border-radius: 5px 5px 5px 5px;
 	// url(images/bg.jpg) no-repeat center center fixed; 
 }
@@ -21,15 +21,19 @@ body {
 }
 
 .search-box{
-
+	border-radius: 5px;
 }
 
-.searchbutton{
-	padding: 1px 2px 5px 0;
+#searchbutton{
+	height: 2em;
+	padding-top: 4px;
+}
+.dropdown{
+	margin: 5px 0 5px 0;
 }
 
 .intro{
-	background-color: RGB(50,100,75);
+	background-color: RGB(100, 150, 200);
 	padding: 5px 0 0 10px;
 	margin: 0 0 0 0;
 	font-size: 1.5em;
@@ -46,10 +50,11 @@ body {
 	padding: 5px 5px 5px 5px;
 }
 
+
 .watchlist{
 	text-align: left;
 	padding: 5px 0 0 10px;
-	background-color: RGB(50,100,75);
+	background-color: RGB(100, 150, 200);
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
 	border-radius: 5px 5px 5px 5px;
@@ -67,7 +72,7 @@ body {
 #watched{
 	text-align: left;
 	padding: 5px 0 0 10px;
-	background-color: RGB(50,100,75);
+	background-color: RGB(100, 150, 200);
 	margin: 0 0 1em 0;
 	font-size: 1.5em;
 	border-radius: 5px 5px 5px 5px;
