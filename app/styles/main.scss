@@ -77,7 +77,17 @@ body {
 	font-size: 1.5em;
 	border-radius: 5px 5px 5px 5px;
 }
-
+tr{
+	line-height:2em;
+	margin-bottom: 5px;
+}
+.delete{
+	height: 0.5em;
+	border-bottom:solid black 2px;
+	padding-bottom: 2.25em;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
 .watched{
 	border: 1px solid black;
 	width: 100%;
