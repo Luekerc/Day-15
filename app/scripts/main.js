@@ -9,7 +9,7 @@ var rendertowatch = function(movie) {
 };
 
 var getTowatch = function() {
-	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatchd-http', 	
+	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http', 	
 		function(movie) {
 			rendertowatch(movie);
 	  	},
@@ -25,7 +25,7 @@ var renderwatched = function(movie) {
 };
 
 var getMovies = function() {
-	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviesd-http', 	
+	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviese-http', 	
 		function(movie) {
 			renderwatched(movie);
 		},
@@ -72,8 +72,8 @@ function onResultsReceived(data) {
 	$("tr").click(function watchlist(){
 		$('.towatch').append(this);
 		// console.log(this);
-		console.log(this.innerHTML);
-		$.post('https://tiny-pizza-server.herokuapp.com/collections/charlestowatchd-http',
+		// console.log(this.innerHTML);
+		$.post('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http',
 			{
 				movie: {
 					movie: this.innerHTML,
@@ -87,11 +87,13 @@ function onResultsReceived(data) {
 		$(this).off('click');
 
 		$(this).on('click', onClickB);
-
+	
 		function onClickB(){
-			console.log(this.innerHTML);
+			// console.log(this.innerHTML);
+			// console.log(this);
+			
 			$('.watched').append(this);
-			$.post('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviesd-http',
+			$.post('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviese-http',
 				{
 					movie: {
 						movie: this.innerHTML,
@@ -99,39 +101,35 @@ function onResultsReceived(data) {
 				}, 
 				function(movie){
 					renderwatched(movie);
+					console.log(movie._id);
 				},
 				'json'
 			)			
-			// console.log(this.innerHTML);
+			
 			var inner=this.innerHTML;
 			
 			var gitMovies = function() {
-				$.get('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviesd-http', 	
+				$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http', 	
 					function(john) {
-						console.log(john);
-						deleteMovie(john);
-				},
+						for(var i=0; i<john.length;i++){
+							
+							if(john[i].movie.movie===inner){
+								console.log("They matched");	
+								console.log(inner);
+								console.log(john[i].movie.movie);
+								console.log(john[i]._id);
+								console.log('http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+john[i]._id);
+									$.ajax({
+								    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+john[i]._id,
+								    type: 'DELETE',
+									});
+							}
+						}
+					},
 					'json'
-				);
-			
-		
-			function deleteMovie(john){
-				console.log(inner);
-				console.log(john);
-				for(var i=0; i<john.length;i++){
-					console.log(john[i].movie.movie);
-					if(john[i].movie.movie===inner){
-						console.log(john[i].movie._id);	
-						// $.ajax({
-						// 	    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatchd-http/'+movie.Title,
-						// 	    type: 'DELETE',
-						// });
-					}
-				}
+				);	
 			}
-			// deleteMovie();
-		}
-		gitMovies();
+			gitMovies();
 		}
 	})
 }
@@ -139,9 +137,9 @@ function onResultsReceived(data) {
 
 };
 // for(var i in this) {
-		// console.log('http://tiny-pizza-server.herokuapp.com/collections/charlestowatch-http/'+movie[i].movie._id);
+		// console.log('http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+movie[i].movie._id);
 // 	$.ajax({
-// 	    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatch-http/'+movie[i]._id,
+// 	    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+movie[i]._id,
 // 	    type: 'DELETE',
 // 	});
 // }
