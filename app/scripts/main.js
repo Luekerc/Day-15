@@ -9,7 +9,7 @@ var rendertowatch = function(movie) {
 };
 
 var getTowatch = function() {
-	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http', 	
+	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatchf-http', 	
 		function(movie) {
 			rendertowatch(movie);
 	  	},
@@ -25,7 +25,7 @@ var renderwatched = function(movie) {
 };
 
 var getMovies = function() {
-	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviese-http', 	
+	$.get('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviesf-http', 	
 		function(movie) {
 			renderwatched(movie);
 		},
@@ -73,7 +73,7 @@ function onResultsReceived(data) {
 		$('.towatch').append(this);
 		// console.log(this);
 		// console.log(this.innerHTML);
-		$.post('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http',
+		$.post('https://tiny-pizza-server.herokuapp.com/collections/charlestowatchf-http',
 			{
 				movie: {
 					movie: this.innerHTML,
@@ -93,7 +93,7 @@ function onResultsReceived(data) {
 			// console.log(this);
 			
 			$('.watched').append(this);
-			$.post('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviese-http',
+			$.post('https://tiny-pizza-server.herokuapp.com/collections/charlesmoviesf-http',
 				{
 					movie: {
 						movie: this.innerHTML,
@@ -109,7 +109,7 @@ function onResultsReceived(data) {
 			var inner=this.innerHTML;
 			
 			var gitMovies = function() {
-				$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http', 	
+				$.get('https://tiny-pizza-server.herokuapp.com/collections/charlestowatchf-http', 	
 					function(john) {
 						for(var i=0; i<john.length;i++){
 							
@@ -118,9 +118,9 @@ function onResultsReceived(data) {
 								console.log(inner);
 								console.log(john[i].movie.movie);
 								console.log(john[i]._id);
-								console.log('http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+john[i]._id);
+								console.log('http://tiny-pizza-server.herokuapp.com/collections/charlestowatchf-http/'+john[i]._id);
 									$.ajax({
-								    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatche-http/'+john[i]._id,
+								    url: 'http://tiny-pizza-server.herokuapp.com/collections/charlestowatchf-http/'+john[i]._id,
 								    type: 'DELETE',
 									});
 							}
